@@ -11,13 +11,16 @@ import referenciasFreelancer from './containers/referenciasFreelancer/referencia
 //Importar estilos
 import './App.css';
 
+import AuthContainer from "./containers/AuthContainer/AuthContainer"
+
+
 function App() {
   return (
     <BrowserRouter>
         <Switch>
           <Route exact path="/" component={mainContainer} />
           <Route exact path="/about_us" component={aboutUs} />
-          <Route exact path="/autenticacion" component={autenticacion} />
+          <Route exact path="/auth" component={AuthContainer} />
           <Route exact path="/formulario_oferta" component={formularioOferta} />
           <Route exact path="/perfil_usuario" component={perfilUsuario} />
           <Route exact path="/referencias_empresa" component={referenciasEmpresa} />
