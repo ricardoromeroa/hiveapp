@@ -2,6 +2,7 @@ import React from 'react';
 import NavbarBotones from '../../components/Navbar/NavbarBotones';
 import TarjetaFree from './TarjetaFree/TarjetaFree';
 import FiltroFree from './FiltroFree/FiltroFree';
+import Footer from '../../components/Footer/Footer';
 
 const referenciasFreelancer = () => {
     return (
@@ -21,7 +22,7 @@ const referenciasFreelancer = () => {
                     </div>
                 </div>
             </div>
-
+            <Footer />
         </div>
     )
 }

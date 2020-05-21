@@ -2,6 +2,7 @@ import React from 'react';
 import NavbarBotones from '../../components/Navbar/NavbarBotones';
 import Tarjeta from './Tarjeta/Tarjeta';
 import Filtro from './Filtro/Filtro';
+import Footer from '../../components/Footer/Footer';
 
 const referenciasEmpresa = () => {
     return (
@@ -20,7 +21,7 @@ const referenciasEmpresa = () => {
                     </div>
                 </div>
             </div>
-
+            <Footer />
         </div>
     )
 }
