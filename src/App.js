@@ -12,9 +12,6 @@ import referenciasFreelancer from './containers/referenciasFreelancer/referencia
 //Importar estilos
 import './App.css';
 
-
-
-
 function App() {
   return (
     <BrowserRouter>

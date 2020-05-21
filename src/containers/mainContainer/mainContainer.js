@@ -1,11 +1,22 @@
-import React from 'react'
+import React from 'react';
 import Navbar from '../../components/Navbar/Navbar';
+import Bienvenido from '../../components/Bienvenido/Bienvenido';
+import Tarjetas from '../../components/Tarjetas/Tarjetas';
+import Socios from '../../components/Socios/Socios';
+import Proyectos from '../../components/Proyectos/Proyectos';
+import Registro from '../../components/Registro/Registro';
+import Footer from '../../components/Footer/Footer';
 
 const mainContainer = () => {
     return (
         <div>
             <Navbar />
-            <h1> HOLA DESDE EL MAIN CONTAINER </h1>
+            <Bienvenido />
+            <Tarjetas />
+            <Socios />
+            <Proyectos />
+            <Registro />
+            <Footer />
         </div>
     )
 }
