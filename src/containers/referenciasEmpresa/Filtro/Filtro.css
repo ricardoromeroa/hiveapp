@@ -1,4 +1,4 @@
-body {
+.bodi {
     background-color: #727679;
 }
 
@@ -43,7 +43,7 @@ body {
 
 .filtro {
     /* cambiar tamaño de barra position: fixed; */
-    max-height: 100%;
+    margin: 20 px;
 }
 
 .filtro a {
@@ -100,11 +100,6 @@ body {
 }
 
 .dropdown-btn:hover {
-    color: #34baff;
-}
-
-.active {
-    background-color: #34baff;
     color: white;
 }
 
@@ -136,4 +131,11 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+}
+
+.card {
+    margin-top: 50px !important; 
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
 }

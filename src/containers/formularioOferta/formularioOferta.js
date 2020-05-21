@@ -1,6 +1,6 @@
 import React from 'react'
 
-const autenticacion = () => {
+const formularioOferta = () => {
     return (
         <div>
             
@@ -8,4 +8,4 @@ const autenticacion = () => {
     )
 }
 
-export default autenticacion
+export default formularioOferta
