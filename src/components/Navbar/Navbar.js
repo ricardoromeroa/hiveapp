@@ -11,7 +11,7 @@ const Navbar = () => {
     return (
         <header className="bg-light">
             <nav className="navbar navbar-expand-lg navbar-light bg-light">
-                <NavLink className="navbar-brand" activeClsssName="disable" to="/">
+                <NavLink className="navbar-brand" activeClassName="disable" to="/">
                     <img src={logo}/>
                 </NavLink>
             </nav>
