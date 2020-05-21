@@ -95,7 +95,7 @@ const FormularioOferta = () => {
                 apellido: apellido,
                 email: email, 
             }
-            axios.post(`https://${PROJECT}.firebaseio.com/ofertas.json`, body)
+            axios.post(`https://${PROJECT}.firebaseio.com/oferta.json`, body)
                 .then(() => {
                     history.push("/");
                 })
