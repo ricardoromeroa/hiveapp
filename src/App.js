@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 // Importar containers
 import aboutUs from './containers/aboutUs/aboutUs';
-import autenticacion from './containers/autenticacion/autenticacion';
+import AuthContainer from "./containers/AuthContainer/AuthContainer"
 import formularioOferta from './containers/formularioOferta/formularioOferta';
 import mainContainer from './containers/mainContainer/mainContainer';
 import perfilUsuario from './containers/perfilUsuario/perfilUsuario';
@@ -10,9 +10,6 @@ import referenciasEmpresa from './containers/referenciasEmpresa/referenciasEmpre
 import referenciasFreelancer from './containers/referenciasFreelancer/referenciasFreelancer';
 //Importar estilos
 import './App.css';
-
-import AuthContainer from "./containers/AuthContainer/AuthContainer"
-
 
 function App() {
   return (
