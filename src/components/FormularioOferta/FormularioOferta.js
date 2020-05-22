@@ -5,7 +5,7 @@ import axios from 'axios';
 import logo from '../../assets/png/hive.png';
 import './formularioOferta.css'
 
-{/*{ empresa, puesto, descripcion, requisitos, tipo, ubicacion, fechap, fechav, nombre, apellido, email }} */}
+{/*{ empresa, puesto, descripcion, requisitos, tipo, ubicacion, fechap, fechav, nombre, apellido, email }} */ }
 const FormularioOferta = () => {
     const PROJECT = "hive-crud"
 
@@ -23,7 +23,7 @@ const FormularioOferta = () => {
     const [error, setError] = useState('');
     const [loading, setLoading] = useState(false);
     const history = useHistory();
-    
+
     const handleEmpresa = (e) => {
         console.log(e.target.value);
         setEmpresa(e.target.value);
@@ -90,7 +90,7 @@ const FormularioOferta = () => {
             && nombre.length > 0
             && apellido.length > 0
             && email.length > 0) {
-                
+
             const body = {
                 empresa: empresa,
                 puesto: puesto,
@@ -102,7 +102,7 @@ const FormularioOferta = () => {
                 fechav: fechav,
                 nombre: nombre,
                 apellido: apellido,
-                email: email, 
+                email: email,
             }
             axios.post(`https://${PROJECT}.firebaseio.com/oferta.json`, body)
                 .then(() => {
@@ -116,8 +116,8 @@ const FormularioOferta = () => {
             setLoading(false);
             setError("Verificar que la información esté completa");
         }
-    };  
-    
+    };
+
 
 
     return (
@@ -180,16 +180,14 @@ const FormularioOferta = () => {
                             <label for="">Correo de Contacto</label>
                             <input onChange={handleEmail} value={email} type="email" className="form-control" name="correo" placeholder="Correo de Contacto" />
                         </div>
-
-                        <div className="text-danger">
-                            {error}
-                        </div>
-
-                        {
-                            loading &&
-                            <div className="spinner-border text-info" role="status">
+                            <div className="text-danger">
+                                {error}
                             </div>
-                        }        
+                            {
+                                loading &&
+                                <div className="spinner-border text-info" role="status">
+                                </div>
+                            }  
                         <div className="boton">
                             <button onClick={() => publicar()} type="submit" value="send" className="boton btn btn-primary">Publicar</button>
                         </div>

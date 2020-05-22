@@ -35,7 +35,11 @@ const ReferenciasEmpresa = () => {
                         key={id}
                         puesto={Oferta[id].puesto}
                         empresa={Oferta[id].empresa}
-                        lugar={Oferta[id].lugar}
+                        sueldo={Oferta[id].sueldo}
+                        ubicacion={Oferta[id].ubicacion}
+                        duracion={Oferta[id].duracion}
+                        descripcion={Oferta[id].descripcion}
+                        requisitos={Oferta[id].requisitos}
                         id={id}
                         done={Oferta[id].done}
                         getOferta={getOferta}
