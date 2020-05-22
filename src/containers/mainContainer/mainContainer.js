@@ -1,5 +1,5 @@
 import React from 'react';
-import Navbar from '../../components/Navbar/Navbar';
+import NavbarIndex from '../../components/Navbar/NavbarIndex';
 import Bienvenido from '../../components/Bienvenido/Bienvenido';
 import Tarjetas from '../../components/Tarjetas/Tarjetas';
 import Socios from '../../components/Socios/Socios';
@@ -10,7 +10,7 @@ import Footer from '../../components/Footer/Footer';
 const mainContainer = () => {
     return (
         <div>
-            <Navbar />
+            <NavbarIndex />
             <Bienvenido />
             <Tarjetas />
             <Socios />
