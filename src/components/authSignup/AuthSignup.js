@@ -43,8 +43,8 @@ const AuthSignup = () => {
 
     const signUp = () => {
         setLoading(true);
-        if (password === passwordc
-            && check === !check)  {
+        if (password === passwordc) {
+            // && check === !check)  {
             const body = {
                 check: !check,
                 name: name,
@@ -54,7 +54,7 @@ const AuthSignup = () => {
             }
             axios.post(`https://${PROJECT}.firebaseio.com/login.json`, body)
                 .then(() => {
-                    history.push("/");
+                    history.push("/auth");
                 })
                 .catch(() => {
                     setLoading(false);
@@ -70,9 +70,9 @@ const AuthSignup = () => {
     return (
         <div className="auth">
             <div>
-                <div className="form">
+                <div>
                     <div className="card col-12">
-                        <Link className="logo"><img src={logo} />
+                        <Link to ="/" className="logo"><img src={logo} />
                         </Link>
 
                         <div class="form-group">
@@ -106,7 +106,7 @@ const AuthSignup = () => {
                             </div>
                         }
                         <button onClick={() => signUp()} type="submit" value="send" className="btn btn-primary text-center">Regístrate a HIVE</button>
-                        <p class="ingresa">¿Ya tienes cuenta? <a href="login.html">Ingresa Aquí</a></p>
+                        <p class="ingresa">¿Ya tienes cuenta? <Link to="auth">Ingresa Aquí</Link></p>
                     </div>
                 </div>
             </div>

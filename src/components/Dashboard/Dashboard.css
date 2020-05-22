@@ -31,6 +31,12 @@ a, a:hover, a:focus {
     transition: all 0.3s;
 }
 
+a.listitems {
+    color: white;
+}
+
+
+
 #sidebar .sidebar-header {
     padding: 20px;
     background: rgba(114,118,121, 0.815);

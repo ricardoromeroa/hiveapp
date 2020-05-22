@@ -106,7 +106,7 @@ const FormularioOferta = () => {
             }
             axios.post(`https://${PROJECT}.firebaseio.com/oferta.json`, body)
                 .then(() => {
-                    history.push("/");
+                    history.push("/referencias_empresa");
                 })
                 .catch(() => {
                     setLoading(false);
@@ -123,7 +123,7 @@ const FormularioOferta = () => {
     return (
         <div className="container">
             <div className="card col-12">
-                <Link className="logo"><img src={logo} />
+                <Link to="/" className="logo"><img src={logo} />
                 </Link>
                 <div>
                     <div className="form-row">
@@ -180,21 +180,16 @@ const FormularioOferta = () => {
                             <label for="">Correo de Contacto</label>
                             <input onChange={handleEmail} value={email} type="email" className="form-control" name="correo" placeholder="Correo de Contacto" />
                         </div>
-
-                        <div className="center-oferta">
-
                             <div className="text-danger">
                                 {error}
                             </div>
-
                             {
                                 loading &&
                                 <div className="spinner-border text-info" role="status">
                                 </div>
-                            }
-                            <div className="boton">
-                                <button onClick={() => publicar()} type="submit" value="send" className="btn btn-primary">Publicar</button>
-                            </div>
+                            }  
+                        <div className="boton">
+                            <button onClick={() => publicar()} type="submit" value="send" className="boton btn btn-primary">Publicar</button>
                         </div>
                     </div>
                 </div>
