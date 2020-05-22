@@ -3,10 +3,11 @@ import FormularioOferta from "../../components/FormularioOferta/FormularioOferta
 
 const OfertaContainer = () => {
     return (
-        <div className="container">
-            
-            <FormularioOferta />
-        </div>
+        <section className="fondo">
+            <div className="container">
+                <FormularioOferta />
+            </div>
+        </section>
     )
 }
 

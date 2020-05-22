@@ -34,7 +34,7 @@ const Auth = () => {
             }
             axios.post(`https://${PROJECT}.firebaseio.com/login.json`, body)
                 .then(() => {
-                    history.push("/");
+                    history.push("/perfil_usuario");
                 })
                 .catch(() => {
                     setLoading(false);
@@ -50,9 +50,9 @@ const Auth = () => {
     return (
         <div className="auth">
             <div>
-                <div className="form">
+                <div>
                     <div className="card col-12">
-                        <Link className="logo"><img src={logo}/>
+                        <Link to="/" className="logo"><img src={logo}/>
                         </Link>
 
                         <div className="form-group">
@@ -81,7 +81,7 @@ const Auth = () => {
                         }
                         <button onClick={() => logIn()} type="submit" className="btn btn-primary"> Accede a HIVE </button>
 
-                        <p className="registro">No te has registrado? <a href="signup.html">Registrate Aquí</a></p>
+                        <p className="registro">No te has registrado? <Link to="/signup">Registrate Aquí</Link></p>
                     </div>
                 </div>
             </div>

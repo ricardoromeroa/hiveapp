@@ -1,12 +1,14 @@
 import React from 'react'
 import AuthSignup from "../../components/authSignup/AuthSignup"
+import "./SignupContainer.css"
 
 const SignupContainer = () => {
     return (
-        <div>
-            
-            <AuthSignup />
-        </div>
+        <section className="fondo">
+            <div className="container">
+                <AuthSignup />
+            </div>
+        </section>
     )
 }
 
