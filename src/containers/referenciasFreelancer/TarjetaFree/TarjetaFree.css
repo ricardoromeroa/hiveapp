@@ -1,5 +1,6 @@
 .bodi {
-    background-color: #727679;
+    /* background-color: #727679; */
+    background-image: url("../../../assets/png/bg1.png");
 }
 
 .navbar img {
@@ -138,11 +139,14 @@
 }
 
 .card-header1 {
+    color: white;
     margin-bottom: 0 !important;
     background-color: #23cee986 !important;
     border-bottom: 2px solid rgba(0,0,0,.125) !important;
+    background-image: url("../../../assets/png/bg1.png");
 }
 
 .card1 {
     padding: 0px !important;
+
 }
