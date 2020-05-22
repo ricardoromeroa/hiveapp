@@ -6,11 +6,12 @@ import AuthContainer from "./containers/AuthContainer/AuthContainer"
 import SignupContainer from "./containers/SignupContainer/SignupContainer"
 import OfertaContainer from './containers/OfertaContainer/OfertaContainer';
 import mainContainer from './containers/mainContainer/mainContainer';
-import perfilUsuario from './containers/perfilUsuario/perfilUsuario';
-import referenciasEmpresa from './containers/referenciasEmpresa/referenciasEmpresa';
+import DashboardContainer from './containers/DashboardContainer/DashboardContainer';
+import ReferenciasEmpresa from './containers/ReferenciasEmpresa/ReferenciasEmpresa';
 import referenciasFreelancer from './containers/referenciasFreelancer/referenciasFreelancer';
 //Importar estilos
 import './App.css';
+
 
 function App() {
   return (
@@ -21,8 +22,8 @@ function App() {
           <Route exact path="/auth" component={AuthContainer} />
           <Route exact path="/signup" component={SignupContainer} />
           <Route exact path="/formulario_oferta" component={OfertaContainer} />
-          <Route exact path="/perfil_usuario" component={perfilUsuario} />
-          <Route exact path="/referencias_empresa" component={referenciasEmpresa} />
+          <Route exact path="/perfil_usuario" component={DashboardContainer} />
+          <Route exact path="/referencias_empresa" component={ReferenciasEmpresa} />
           <Route exact path="/referencias_freeelancer" component={referenciasFreelancer} />
 
           {/* <Route component={NotFound} /> */}
