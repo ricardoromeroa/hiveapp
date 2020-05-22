@@ -4,7 +4,7 @@ import TarjetaFree from './TarjetaFree/TarjetaFree';
 import FiltroFree from './FiltroFree/FiltroFree';
 import Footer from '../../components/Footer/Footer';
 
-const referenciasFreelancer = () => {
+const ReferenciasFreelancer = () => {
     return (
 
         <div>
@@ -25,4 +25,4 @@ const referenciasFreelancer = () => {
     )
 }
 
-export default referenciasFreelancer
+export default ReferenciasFreelancer

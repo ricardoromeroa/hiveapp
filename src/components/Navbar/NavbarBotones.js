@@ -4,8 +4,7 @@ import { NavLink } from 'react-router-dom';
 //Insertar imagen
 import logo from '../../assets/png/hive.png';
 import './Navbar.css';
-import DropdownButton from 'react-bootstrap/DropdownButton'
-import Dropdown from 'react-bootstrap/Dropdown'
+
 
 const NavbarBotones = () => {
     return (
@@ -19,10 +18,12 @@ const NavbarBotones = () => {
                         <li className="nav-item">
                             <NavLink className="nav-link" to="#">Quienes Somos</NavLink>
                         </li>
-                        <DropdownButton id="dropdown-split-variants-Info" className="nav-item" title="Buscar">
-                            <Dropdown.Item href="/referencias_empresa">Vacantes</Dropdown.Item>
-                            <Dropdown.Item href="/referencias_freeelancer">Candidatos</Dropdown.Item>
-                        </DropdownButton>
+                        <li className="nav-item">
+                            <NavLink className="nav-link" to="/referencias_empresa">Vacantes</NavLink>
+                        </li>
+                        <li className="nav-item">
+                            <NavLink className="nav-link" to="/referencias_freelancer">Candidatos</NavLink>
+                        </li>
                         <li className="nav-item">
                             <NavLink className="nav-link" to="#">Concursos</NavLink>
                         </li>

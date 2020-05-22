@@ -2,22 +2,15 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 
 // import axios from 'axios';
-import logo from '../../assets/png/hive.png';
 import devfwhite from '../../assets/png/devf-white.png';
 import usersolid from '../../assets/icons/usersolid.svg'
 import "./Dashboard.css"
 
 
-const Dashboard = () => {
+const Dashboard = ({email, name}) => {
+    
     return (
         <div>
-            {/* <div className="bg-light">
-                <div className="navbar navbar-expand-lg navbar-light bg-light">
-                <Link className="logo"><img src={logo} />
-                </Link>
-                </div>
-            </div> */}
-
             <div className="mainpage">
                 <aside id="sidebar">
                     <div className="sidebar-header">
@@ -26,13 +19,13 @@ const Dashboard = () => {
                     </div>
 
                     <ul className="list-unstyled components">
-                        <p className="usuario" id="objeto-usuario">Nombre de Usuario</p>
-                        <h5 className="nombre" id="objeto-nombre">Nombre</h5>
+                        <p className="usuario" id="objeto-usuario">{email}</p>
+                        <h5 className="nombre" id="objeto-nombre">{name}</h5>
                         <li>
                             <Link className="listitems" to="#">Perfil</Link>
                         </li>
                         <li>
-                            <Link className="listitems" to="/referencias_freeelancer">Directorio</Link>
+                            <Link className="listitems" to="/referencias_freelancer">Directorio</Link>
                         </li>
                         <li>
                             <Link  className="listitems" to="/referencias_empresa">Vacantes</Link>
