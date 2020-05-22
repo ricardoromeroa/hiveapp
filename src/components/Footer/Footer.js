@@ -31,7 +31,7 @@ const Footer = () => {
                                             <NavLink className="nav-link footer-text" to="#">Sobre nosotros</NavLink>
                                         </li>
                                         <li class="nav-item ">
-                                            <NavLink className="nav-link footer-text" to="/referencias_freeelancer">Freelancers</NavLink>
+                                            <NavLink className="nav-link footer-text" to="/referencias_freelancer">Freelancers</NavLink>
                                         </li>
                                         <li className="nav-item ">
                                             <NavLink className="nav-link footer-text" to="/referencias_empresa">Empresas</NavLink>

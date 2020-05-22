@@ -6,7 +6,7 @@ const Registro = () => {
         <section className="button-bg ">
             <div className="container button-align">
                 <div className="button-margin-register">
-                    <Link to="/auth">
+                    <Link to="/signup">
                         <button type="button" className="btn btn-secondary btn-md rounded-pill">Registrate para buscar</button>
                     </Link>
                 </div>

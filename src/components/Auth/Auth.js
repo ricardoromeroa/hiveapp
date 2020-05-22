@@ -52,7 +52,7 @@ const Auth = () => {
             <div>
                 <div>
                     <div className="card col-12">
-                        <Link to="/" className="logo"><img src={logo}/>
+                        <Link to="/" className="logo"><img src={logo} alt="logo" />
                         </Link>
 
                         <div className="form-group">

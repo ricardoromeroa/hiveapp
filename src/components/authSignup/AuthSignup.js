@@ -42,19 +42,21 @@ const AuthSignup = () => {
     }
 
     const signUp = () => {
+        
         setLoading(true);
         if (password === passwordc) {
             // && check === !check)  {
             const body = {
-                check: !check,
+                // check: !check,
                 name: name,
                 email: email,
                 password: password,
                 passwordc: passwordc
             }
-            axios.post(`https://${PROJECT}.firebaseio.com/login.json`, body)
+            axios.post(`https://${PROJECT}.firebaseio.com/signup.json`, body)
                 .then(() => {
                     history.push("/auth");
+                    
                 })
                 .catch(() => {
                     setLoading(false);
@@ -62,7 +64,7 @@ const AuthSignup = () => {
                 });
         } else {
             setLoading(false);
-            setError("Verifica que la información sea correcta");
+            setError("Verifica que la contraseñas coincidan");
         }
     };
 
@@ -76,7 +78,7 @@ const AuthSignup = () => {
                         </Link>
 
                         <div class="form-group">
-                            <label className="label" for="username1">Nombre de Usuario</label>
+                            <label className="label" for="user1">Nombre de Usuario</label>
                             <input onChange={handleName} value={name} type="text" name="name" className="form-control" id="username1" aria-describedby="usuario"
                                 placeholder="Ingresa Nombre de Usuario" />
                             <label className="label" name="email" for="exampleInputEmail1">Correo Electrónico</label>

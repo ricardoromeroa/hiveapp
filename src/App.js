@@ -8,7 +8,7 @@ import OfertaContainer from './containers/OfertaContainer/OfertaContainer';
 import mainContainer from './containers/mainContainer/mainContainer';
 import DashboardContainer from './containers/DashboardContainer/DashboardContainer';
 import ReferenciasEmpresa from './containers/ReferenciasEmpresa/ReferenciasEmpresa';
-import referenciasFreelancer from './containers/referenciasFreelancer/referenciasFreelancer';
+import ReferenciasFreelancer from './containers/referenciasFreelancer/ReferenciasFreelancer';
 //Importar estilos
 import './App.css';
 
@@ -25,7 +25,7 @@ function App() {
           <Route exact path="/formulario_oferta" component={OfertaContainer} />
           <Route exact path="/perfil_usuario" component={DashboardContainer} />
           <Route exact path="/referencias_empresa" component={ReferenciasEmpresa} />
-          <Route exact path="/referencias_freeelancer" component={referenciasFreelancer} />
+          <Route exact path="/referencias_freelancer" component={ReferenciasFreelancer} />
 
           {/* <Route component={NotFound} /> */}
         </Switch>
