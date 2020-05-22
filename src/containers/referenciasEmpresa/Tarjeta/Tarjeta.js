@@ -6,23 +6,6 @@ import axios from 'axios';
 
 const Tarjeta = ({ empresa, puesto, sueldo, duracion, lugar, descripcion, requisitos }) => {
 
-    const [Oferta, setOferta] = useState({});
-    const key = "hive-crud"
-
-    const getOferta = () => {
-        axios.get(`https://${key}.firebaseio.com/oferta.json`)
-            .then(({ data }) => setOferta(data));
-
-    }
-
-    useEffect(() => {
-        getOferta();
-    }, [])
-
-
-
-
-
     return (
 
         <div className="bodi">
@@ -44,16 +27,7 @@ const Tarjeta = ({ empresa, puesto, sueldo, duracion, lugar, descripcion, requis
                         <span>hab5</span>
                     </Card.Text>
                 </Card.Body>
-                {/* {Object.keys(Oferta).map((id) =>
-                    <Oferta
-                        // key={id}
-                        // puesto={Oferta[id].puesto}
-                        // empresa={Oferta[id].empresa}
-                        // lugar={Oferta[id].lugar}
-                        // id={id}
-                        // done={Oferta[id].done}
-                        // getOferta={getOferta}
-                    />)} */}
+                
             </Card>
         </div>
     )
