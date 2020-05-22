@@ -28,7 +28,7 @@ const Footer = () => {
                                             <NavLink className="nav-link footer-text" to="#">Proyectos</NavLink>
                                         </li>
                                         <li className="nav-item ">
-                                            <NavLink className="nav-link footer-text" to="./about_us">Sobre nosotros</NavLink>
+                                            <NavLink className="nav-link footer-text" to="#">Sobre nosotros</NavLink>
                                         </li>
                                         <li class="nav-item ">
                                             <NavLink className="nav-link footer-text" to="/referencias_freeelancer">Freelancers</NavLink>
