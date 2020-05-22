@@ -81,7 +81,16 @@ const FormularioOferta = () => {
 
     const publicar = () => {
         setLoading(true);
-        if (empresa.length > 0) {
+        if (empresa.length > 0
+            && empresa.length > 0
+            && puesto.length > 0
+            && descripcion.length > 0
+            && requisitos.length > 0
+            && ubicacion.length > 0
+            && nombre.length > 0
+            && apellido.length > 0
+            && email.length > 0) {
+                
             const body = {
                 empresa: empresa,
                 puesto: puesto,
