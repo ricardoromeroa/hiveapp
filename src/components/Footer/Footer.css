@@ -7,7 +7,7 @@ p{
 }
 
 .grayback{
-    background-color: #727679;
+    background-color: rgb(14, 130, 189);
     color: whitesmoke;
 }
 
@@ -71,7 +71,7 @@ p{
 }
 
 .logos-bg{
-    background-color: #34BAFF;
+    background-color: rgb(14, 130, 189);
 }
 
 .logos-text{
@@ -81,7 +81,7 @@ p{
 }
 
 .logos-img{
-    background-color: rgb(152, 221, 255);
+    background-color: #34BAFF;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;

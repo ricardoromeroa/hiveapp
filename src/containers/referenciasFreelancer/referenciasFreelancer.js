@@ -17,8 +17,6 @@ const referenciasFreelancer = () => {
                     </div>
                     <div>
                         <TarjetaFree />
-                        <TarjetaFree />
-                        <TarjetaFree />
                     </div>
                 </div>
             </div>
