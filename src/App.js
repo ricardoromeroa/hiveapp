@@ -19,7 +19,7 @@ function App() {
     <BrowserRouter>
         <Switch>
           <Route exact path="/" component={mainContainer} />
-          <Route exact path="/about_us" component={aboutUs} />
+          <Route exact path="/#" component={aboutUs} />
           <Route exact path="/auth" component={AuthContainer} />
           <Route exact path="/signup" component={SignupContainer} />
           <Route exact path="/formulario_oferta" component={OfertaContainer} />

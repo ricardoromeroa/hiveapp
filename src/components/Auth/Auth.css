@@ -8,7 +8,6 @@
     
     padding: 50px;
     margin: auto;
-    max-width: 800px; 
 }
 
 .form-group.form-control {
@@ -27,7 +26,8 @@
 }
 
 .btn {
-    margin-top: 50px;   
+    margin-top: 50px; 
+    align-self: center !important;  
 }
 
 .logo {

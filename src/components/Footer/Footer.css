@@ -161,9 +161,17 @@ p{
     justify-content: space-around
 }
 
+.cardF{
+    margin : 25px !important;
+    padding: 10px !important;
+    align-items: center !important;
+    
+}
+
 .card{
     margin : 25px !important;
     padding: 10px !important;
+    
 }
 
 .margen{
@@ -204,4 +212,22 @@ p{
 .card-group{
     padding: 0px !important;
     margin: 0px !important;
+}
+
+.row1{
+    display: flex;
+    justify-content: center;
+    margin-right: 1 px;
+    margin-left: 1 px;
+}
+
+
+.icono-size{
+    width:80px;
+    height:80px;
+}
+
+.centrar{
+    display: flex;
+    flex-direction: column;
 }

@@ -17,7 +17,7 @@ const NavbarBotones = () => {
                 <div className="collapse navbar-collapse" id="navbarNav">
                     <ul className="navbar-nav">
                         <li className="nav-item">
-                            <NavLink className="nav-link" to="/about_us">Quienes Somos</NavLink>
+                            <NavLink className="nav-link" to="#">Quienes Somos</NavLink>
                         </li>
                         <DropdownButton id="dropdown-split-variants-Info" className="nav-item" title="Buscar">
                             <Dropdown.Item href="/referencias_empresa">Vacantes</Dropdown.Item>
